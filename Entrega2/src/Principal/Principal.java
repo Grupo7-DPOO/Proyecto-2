@@ -1,3 +1,4 @@
+/*
 package Principal;
 import java.util.Scanner;
 import Clases.Habitaciones;
@@ -239,3 +240,4 @@ public class Principal {
 	}	
 
 }
+*/
