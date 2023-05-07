@@ -38,6 +38,15 @@ public class PBotones extends JPanel{
 		this.bFactura = new JButton("Factura");
 		bFactura.setFont(font);
 		bFactura.setBackground(Color.decode("#9CAEA9"));
+
+		bFactura.addActionListener(e -> {
+		    PFactura pFactura = new PFactura(fPrincipal);
+		    pFactura.setVisible(true);
+		});
+		bReservas.addActionListener(e -> {
+		    PReservas pReservas = new PReservas(fPrincipal);
+		    pReservas.setVisible(true);
+		});
 		
 		this.add(this.bUsuario);
 		this.add(this.bHabitaciones);
