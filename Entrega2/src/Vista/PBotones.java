@@ -15,6 +15,7 @@ public class PBotones extends JPanel{
 	private JButton bReservas;
 	private JButton bFactura;
 	private JButton bServicios;
+	private JButton bCliente;
 	
 	public PBotones(FPrincipal fPrincipal) {
 		this.fPrincipal = fPrincipal;
@@ -38,7 +39,7 @@ public class PBotones extends JPanel{
 		this.bFactura = new JButton("Factura");
 		bFactura.setFont(font);
 		bFactura.setBackground(Color.decode("#9CAEA9"));
-
+		
 		bFactura.addActionListener(e -> {
 		    PFactura pFactura = new PFactura(fPrincipal);
 		    pFactura.setVisible(true);
@@ -47,6 +48,10 @@ public class PBotones extends JPanel{
 		    PReservas pReservas = new PReservas(fPrincipal);
 		    pReservas.setVisible(true);
 		});
+		bCliente.addActionListener(e -> {
+		    PCliente pCliente = new PCliente(fPrincipal);
+		    pCliente.setVisible(true);
+		});
 		
 		this.add(this.bUsuario);
 		this.add(this.bHabitaciones);
@@ -54,12 +59,6 @@ public class PBotones extends JPanel{
 		this.add(this.bServicios);
 		this.add(this.bFactura);
 		
-		
-		
 	}
-	
-	
-	
-	
 
 }
