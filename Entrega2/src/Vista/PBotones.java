@@ -60,7 +60,7 @@ public class PBotones extends JPanel{
 		this.add(this.bReservas);
 		this.add(this.bServicios);
 		this.add(this.bFactura);
-		
+		this.add(this.bCliente);
 	}
 
 }
