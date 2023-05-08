@@ -28,7 +28,7 @@ public class PUsuario extends JDialog {
         this.setLayout(new BorderLayout());
 
         JPanel pCampos = new JPanel();
-        pCampos.setLayout(new GridLayout(4, 2, 10, 10));
+        pCampos.setLayout(new GridLayout(2, 1, 10, 10));
         pCampos.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
         JLabel lLogin = new JLabel("Login:");
