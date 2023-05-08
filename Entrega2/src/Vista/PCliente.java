@@ -18,7 +18,7 @@ public class PCliente extends JDialog {
 
     public PCliente(FPrincipal fPrincipal) {
         this.setfPrincipal(fPrincipal);
-        this.setTitle("Factura");
+        this.setTitle("Cliente");
         this.setSize(400, 300);
         this.setLocationRelativeTo(null);
         this.setResizable(false);
@@ -51,7 +51,7 @@ public class PCliente extends JDialog {
         pBotones.setLayout(new FlowLayout(FlowLayout.RIGHT));
         pBotones.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
-        crearClienteButton = new JButton("Crear Factura");
+        crearClienteButton = new JButton("Crear Cliente");
         crearClienteButton.addActionListener(e -> {
             crearFactura();
         });
