@@ -2,12 +2,14 @@ package Clases;
 import java.util.HashMap;
 
 public class Restaurante extends Servicios{
+	private static int numero_hab;
 	private HashMap<String, Menu> menus;
 	private HashMap<Integer, Plato> platos;
 	private HashMap<Integer, String> pedidos;
 
+
 	
-	public Restaurante(int numero_hab) {
+	public Restaurante() {
 		super(numero_hab, "restaurante");
 	    this.menus = new HashMap<String, Menu>();
 	    this.platos = new HashMap<Integer, Plato>();
@@ -22,13 +24,9 @@ public class Restaurante extends Servicios{
 	}
 	
 	public boolean crearPlato(int id, String nombre, String ingredientes, int cantidad_ingredientes) {
-		if(!existePlato(id)) {
 			Plato plato = new Plato(id, nombre, ingredientes, cantidad_ingredientes);
 			this.platos.put(id, plato);
 			return true;
-		}else {
-			return false;
-		}
 	}
 	
 	public String consultarPlatos() {

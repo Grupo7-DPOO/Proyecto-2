@@ -48,10 +48,12 @@ public class PBotones extends JPanel{
 		    PReservas pReservas = new PReservas(fPrincipal);
 		    pReservas.setVisible(true);
 		});
-		bCliente.addActionListener(e -> {
-		    PCliente pCliente = new PCliente(fPrincipal);
-		    pCliente.setVisible(true);
+		
+		bServicios.addActionListener(e -> {
+		    PServicios pServicios = new PServicios(fPrincipal);
+		    pServicios.setVisible(true);
 		});
+		
 		
 		this.add(this.bUsuario);
 		this.add(this.bHabitaciones);

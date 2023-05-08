@@ -41,7 +41,7 @@ public class Plato {
 	}
 	
 	public String toString() {
-		return this.id + "\t" + this.nombre + "\t" + this.ingredientes + "\t" + this.cantidad_ingredientes + "\t" + this.nombre+"\n";
+		return this.id + "\t" + this.nombre + "\t" + this.ingredientes + "\t" + this.cantidad_ingredientes;
 	}
 }
 

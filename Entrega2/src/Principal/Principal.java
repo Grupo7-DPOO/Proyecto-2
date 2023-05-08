@@ -205,8 +205,7 @@ public class Principal {
 				String ingredientes = sc.next();
 				System.out.println("Digite numero ingredientes");
 				int cantidad_ingredientes = sc.nextInt();
-				boolean hecho = restaurante.crearPlato(id1, nombre2, ingredientes, cantidad_ingredientes);
-				System.out.println((hecho)?"plato Creado":"Error: plato ya existe");
+				
 				break;
 			case 15:
 				System.out.println("Digite nombre");
